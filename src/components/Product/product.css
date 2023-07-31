@@ -1,0 +1,403 @@
+.product {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lighthBox {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000000b4;
+    z-index: 50;
+}
+
+.lightBoxWrapper {
+    width: 550px;
+
+}
+
+.lighthBoxMainImgWrapper {
+    position: relative;
+}
+
+.lighthBoxMainImg {
+    width: 550px;
+    height: 550px;
+    border-radius: 20px;
+}
+
+.previousIcon,
+.nextIcon{
+    position: absolute;
+    top: 50%;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+
+}
+
+
+.previousIcon {
+    left: -28px;
+}
+
+.nextIcon {
+    right: -28px;
+}
+
+.closeIcon {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.productWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productLeft {
+    width: 450px;
+    margin-right: 125px;
+}
+
+.productLeftMainPhoto {
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.productLeftThumbnailPhotos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.lightBoxThumbnailPhotosCenter {
+    justify-content: center;
+    gap: 30px;
+}
+
+.productLeftThumbnailPhotoBox {
+    position: relative;
+    width: 90px;
+    height: 90px;
+
+}
+
+
+
+.photoBorder {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    border: 3.5px solid #FF7E1B;
+    z-index: 20;
+
+}
+
+.productLeftThumbnailPhoto {
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.selected {
+    opacity: 0.4;
+}
+
+.productLeftThumbnailPhoto:hover {
+    opacity: 50%;
+}
+
+.productRight {
+    width: 450px;
+}
+
+.productRightCompanyName {
+    font-size: 13px;
+    color: #FF7E1B;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.productRightProductTitle {
+    font-size: 44px;
+    margin-bottom: 30px;
+    color: #1D2026;
+}
+
+.productRightProductDesc {
+    color: #69707D;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+.productRightProductNewPrice {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 5px;
+
+}
+
+.productRightProductNewPriceValue {
+    color: #1D2026;
+    font-size: 28px;
+}
+
+.productRightProductNewPriceDiscount {
+    background-color: #FFEEE2;
+    width: 50px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.productRightProductNewPriceDiscountValue {
+    color: #FF7E1B;
+    font-size: 16px;
+
+}
+
+.productRightProductOldPrice {
+    color: #B6BCC8;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.productRightBuyBox {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    gap: 16px;
+
+}
+
+.productRightBuyBoxPiece {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: #F6F8FD;
+    width: 160px;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.minusIcon,
+.plusIcon {
+    cursor: pointer;
+}
+
+.minusIcon:hover,
+.plusIcon:hover {
+    opacity: 70%;
+}
+
+.productRightBuyBoxBasket {
+    width: 270px;
+    height: 60px;
+    background-color: #FF7E1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.productRightBuyBoxBasket:hover {
+    opacity: 70%;
+}
+
+.productRightBuyBoxBasketButton {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    gap: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+@media (max-width:500px) {
+
+    .product {
+        margin-top: 25px;
+    }
+    
+    .lighthBox {
+       display: none;
+    }
+    
+    .previousIcon,
+    .nextIcon{
+        position: absolute;
+        top: 50%;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-50%);
+        cursor: pointer;
+    
+    
+    }
+    
+    
+    .previousIcon {
+        left: -28px;
+    }
+    
+    .nextIcon {
+        right: -28px;
+    }
+    
+
+    .productWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productLeft {
+        width: 375px;
+        margin-right: 0;
+    }
+    
+    .productLeftMainPhoto {
+        width: 375px;
+        height: 300px;
+        border-radius: 20px;
+    
+    }
+    
+    .productLeftThumbnailPhotos {
+        display: none
+    }
+    
+
+    .productRight {
+        width: 375px;
+        padding: 25px;
+    }
+    
+    .productRightCompanyName {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    
+    .productRightProductTitle {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #1D2026;
+    }
+    
+    .productRightProductDesc {
+        color: #69707D;
+        font-size: 15px;
+        margin-bottom: 25px;
+        line-height: 25px;
+    }
+
+    .productRightProductPrices {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .productRightProductNewPrice {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 0;
+    
+    }
+    
+    
+    .productRightBuyBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        gap: 16px;
+    
+    }
+    
+    .productRightBuyBoxPiece {
+        padding: 0 25px;
+        width: 100%;
+    }
+    
+    .productRightBuyBoxBasket {
+        width: 100%;
+    
+    }
+
+    .productLeftMainPhotoWrapper {
+        position: relative;
+    }
+
+    .previousIcon,
+.nextIcon{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+
+}
+
+
+.previousIcon {
+    left: 10px;
+}
+
+.nextIcon {
+    right: 10px;
+}
+
+}
